@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Sales_Car</Database>
+    <Server>LAPTOP-M0R2A65R</Server>
+    <ConnectionString>Data Source=LAPTOP-M0R2A65R;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>/NmC2kayfImM+m20y2ld0zXFfnQ=10/11/2024 7:18:55 CH10/11/2024 7:18:55 CH</TimeStamp>
+        <ID>
+          <String>SalesCar</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Cn62V/1g2qdBrvuMKeXJlkKNRb4=10/11/2024 7:19:15 CH10/11/2024 7:19:15 CH</TimeStamp>
+        <ID>
+          <String>SalesCar</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>GOt3anqEvZKtpBoI96yZbMuTCC4=10/11/2024 9:36:54 CH10/11/2024 9:34:37 CH</TimeStamp>
+        <ID>
+          <String>DIM Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>B1VVI9qqnO1Ad9trQY+j2FbH5Sc=10/11/2024 9:36:54 CH10/11/2024 9:34:37 CH</TimeStamp>
+        <ID>
+          <String>DIM Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>QA5J4wgFR7WaWqC2mlDBtOpPpCA=10/11/2024 9:36:54 CH10/11/2024 9:34:37 CH</TimeStamp>
+        <ID>
+          <String>DIM Payment Method</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>gY4QfZjMJi4jYQaaJlGZbE2nNiA=10/11/2024 9:36:54 CH10/11/2024 9:34:37 CH</TimeStamp>
+        <ID>
+          <String>DIM Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xUkImnE6fXRsLzmEoQGFa7nGNw0=10/11/2024 9:36:54 CH10/11/2024 9:34:37 CH</TimeStamp>
+        <ID>
+          <String>DIM Promotion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xNo8AFZ2ULYQQL4aEYif9Qsuzi8=10/11/2024 9:36:54 CH10/11/2024 9:34:37 CH</TimeStamp>
+        <ID>
+          <String>DIM Salesperson</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>hwJqMZcnqLhNe5v3W4U5SKpdQ4E=10/11/2024 9:36:54 CH10/11/2024 9:34:37 CH</TimeStamp>
+        <ID>
+          <String>DIM Store</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Vul9cICA6VqpXdtlSNYDoIAd2uo=10/11/2024 9:36:54 CH10/11/2024 9:11:27 CHRedVQ42VN+zu3SqfFnzYxnQ/kxw=10/11/2024 9:34:37 CH10/11/2024 9:11:27 CH</TimeStamp>
+        <ID>
+          <String>SalesCar</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>UVlaS4UIihaekeMhAkN60XE4aec=10/11/2024 7:04:30 CH10/11/2024 7:04:30 CH</TimeStamp>
+      <ID>
+        <String>Sales_Car</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2024-11-10T14:36:56.53Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,165 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="9a2aebf1-7d79-43a1-a644-51f93471d871" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SalesCar 1</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>DIM Customer</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="c12fc815-8207-4bc0-a07e-93d541f48681">
+          <ID>DIM Customer</ID>
+          <Name>DIM Customer</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ad6e69b9-2492-4a48-8bb2-9b309e07e121">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_DIM_Customer</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Date</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="3e1f9011-d007-4747-9e2f-549bc4388041">
+          <ID>DIM Date</ID>
+          <Name>DIM Date</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="d00a684f-9411-4f75-87ee-a62e90b6626a">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_DIM_Date</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Payment Method</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="0e1ec3d3-fde9-456d-9edc-293f32d4ed05">
+          <ID>DIM Payment Method</ID>
+          <Name>DIM Payment Method</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="8e43f19f-3bfa-4fad-9051-5635f8fbcef8">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_DIM_PaymentMethod</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Product</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="890e32af-9eb9-41db-8f26-7c0f2e59a77d">
+          <ID>DIM Product</ID>
+          <Name>DIM Product</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="33c66a75-fff4-4832-9c06-fb6f209bc440">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_DIM_Product</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Promotion</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="2c86c73d-33ef-4346-8cb1-ba6598ea2c39">
+          <ID>DIM Promotion</ID>
+          <Name>DIM Promotion</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="9c305434-4440-484b-be79-95b7b06b1073">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_DIM_Promotion</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Salesperson</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="233dbedd-e91a-48b6-9694-78b1b849e7d0">
+          <ID>DIM Salesperson</ID>
+          <Name>DIM Salesperson</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="260a464c-8b63-4c43-8a93-fe7a46acdd4c">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_DIM_Salesperson</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>DIM Store</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="27067c8b-4f73-43ad-9b28-5e2a38541564">
+          <ID>DIM Store</ID>
+          <Name>DIM Store</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="928943ff-ec2b-4765-bde0-e0001f6222a4">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_DIM_Store</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Fact Sales Orders</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="8d578345-6730-487e-ab32-df124d27e3dd">
+          <ID>Fact Sales Orders</ID>
+          <Name>Fact Sales Orders</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="902af5e5-4c9f-481e-bb81-43cfa2a99672">
+            <DataSourceViewID>SalesCar</DataSourceViewID>
+            <TableID>dbo_FactSalesOrders</TableID>
+          </Source>
+          <StorageMode>Molap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
